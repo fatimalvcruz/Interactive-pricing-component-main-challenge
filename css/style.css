@@ -1,2 +1,213 @@
-h1 {
-  color: aqua; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  background: url("/img/bg-pattern.svg") no-repeat;
+  background-size: 100%; }
+
+.container {
+  min-width: 330px;
+  width: 88%;
+  margin: 0 auto;
+  position: relative; }
+  .container .header {
+    width: 73%;
+    margin: 0 auto;
+    padding-top: 190px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/img/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+    background-position-x: center; }
+    .container .header .traffic {
+      font-weight: 800;
+      color: #293356;
+      padding-bottom: 15px;
+      font-size: 18px; }
+    .container .header .p-1 {
+      font-weight: 600;
+      color: #858fad;
+      line-height: 25px; }
+    .container .header .p-2 {
+      text-align: center;
+      font-weight: 600;
+      color: #858fad;
+      line-height: 25px;
+      padding-bottom: 45px; }
+  .container .card {
+    background-color: white;
+    width: 87%;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 100px #eaeefb; }
+    .container .card .car-header {
+      position: relative; }
+      .container .card .car-header .pageview {
+        text-align: center;
+        padding-bottom: 80px;
+        padding-top: 50px;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 20PX;
+        color: #858fad; }
+      .container .card .car-header .progress {
+        margin: 0 auto;
+        position: relative;
+        width: 85%;
+        background-color: #cdd7ee;
+        margin-bottom: 80px;
+        border-radius: 10px; }
+        .container .card .car-header .progress .bar {
+          background-color: #a5f3eb;
+          width: 30%;
+          height: 15px;
+          transition: width 150ms;
+          display: flex;
+          border-radius: 10px; }
+          .container .card .car-header .progress .bar .percent {
+            width: 50px;
+            height: 50px;
+            background: url("/img/icon-slider.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #10d5c2;
+            border-radius: 100px;
+            position: relative;
+            margin-top: -20px;
+            box-shadow: 0 17px 25px -2px #10d5c2;
+            cursor: pointer; }
+      .container .card .car-header .dolar {
+        color: #293356;
+        font-size: 35px;
+        font-weight: 800;
+        text-align: center;
+        padding-bottom: 60px; }
+      .container .card .car-header .dolar-month {
+        color: #858fad;
+        font-weight: 600;
+        font-size: 25px; }
+      .container .card .car-header .toogle-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px; }
+        .container .card .car-header .toogle-area .monthly {
+          color: #858fad;
+          font-weight: 600;
+          padding-right: 15px; }
+        .container .card .car-header .toogle-area .wrap-toggle {
+          padding-right: 30px; }
+          .container .card .car-header .toogle-area .wrap-toggle .switch {
+            position: relative;
+            display: inline-block;
+            width: 70px;
+            height: 30px;
+            background-color: #cdd7ee;
+            border-radius: 40px;
+            cursor: pointer; }
+          .container .card .car-header .toogle-area .wrap-toggle .switch::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 40px;
+            background-color: white;
+            left: 5px;
+            top: 5px;
+            transition: all 0.4s; }
+          .container .card .car-header .toogle-area .wrap-toggle input[type='checkbox']:checked + .switch::after {
+            transform: translateX(40px); }
+          .container .card .car-header .toogle-area .wrap-toggle input[type="checkbox"]:checked + .switch {
+            background-color: #a5f3eb; }
+          .container .card .car-header .toogle-area .wrap-toggle .offscreen {
+            position: absolute;
+            left: -9999px; }
+        .container .card .car-header .toogle-area .year {
+          color: #858fad;
+          font-weight: 600;
+          padding-right: 15px;
+          position: relative; }
+        .container .card .car-header .toogle-area .percent {
+          width: 70px;
+          height: 30px;
+          background-color: #feece7;
+          border-radius: 40px; }
+          .container .card .car-header .toogle-area .percent .percent-number {
+            left: 15px;
+            top: 7px;
+            color: #ff8c66;
+            position: relative;
+            font-weight: 800; }
+    .container .card hr {
+      border: 0.5px solid #eaeefb; }
+    .container .card .card-footer {
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 65px;
+      padding-top: 40px; }
+      .container .card .card-footer .tex-img {
+        line-height: 25px;
+        font-weight: 600;
+        color: #858fad;
+        padding-bottom: 40px;
+        line-height: 35px; }
+        .container .card .card-footer .tex-img img {
+          margin-right: 10px; }
+      .container .card .card-footer button {
+        background-color: #293356;
+        color: #858fad;
+        font-weight: 800;
+        font-size: 20px;
+        border-radius: 45px;
+        cursor: pointer;
+        width: 238px;
+        height: 63px; }
