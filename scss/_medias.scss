@@ -122,20 +122,22 @@ $Dark-Desaturated-Blue:hsl(227, 35%, 25%);
                     display: none;
                     }
                     .percent-1{
+                        position: relative;
                         display: block;
-                        width: 100px;
+                        width: 125px;
                         height: 20px;
                         background-color:$gravish-red ;
                         border-radius: 40px;
-                        position: relative;
+                       
 
                         .percent-number-1{
+                            position: relative;
                             color: $light-red;
                             font-weight: $font-2;
                             font-size: 12px;
-                            top: 1px;
-                            left: 10px;
-                            position: relative;
+                            top: 2px;
+                            padding-left:10px ;
+                          
                         }
                     }
 
