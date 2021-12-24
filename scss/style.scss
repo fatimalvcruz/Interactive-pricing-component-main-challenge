@@ -92,7 +92,7 @@ body{
 			margin: 0 auto;
 			padding-top: 190px;
 			text-align:center;
-			margin: 0 auto;
+		
 			position: relative;
 			background-image: url('/img/pattern-circles.svg');
 			background-repeat: no-repeat;
@@ -105,19 +105,23 @@ body{
 			font-size: 18px;
 			
 		}
-		.p-1{
-			font-weight: $font-1;
-			color: $Grayish-Blue;
-			line-height: 25px;
-		}
-		.p-2{
-			text-align:center;
-			font-weight: $font-1;
-			color: $Grayish-Blue;
-			line-height: 25px;
-			padding-bottom: 45px;
-		}
+		.text{
+			.p-1{
+				font-weight: $font-1;
+				color: $Grayish-Blue;
+				line-height: 25px;
+			}
+			.p-2{
+				text-align:center;
+				font-weight: $font-1;
+				color: $Grayish-Blue;
+				line-height: 25px;
+				padding-bottom: 45px;
+			}
+	
 
+		}
+		
 	}
 
 	.card{
@@ -159,6 +163,7 @@ body{
 						transition:width 150ms;
 						display: flex;
 						border-radius: 10px; 
+						position: relative;
 		
 
 							.percent{
@@ -169,11 +174,14 @@ body{
 								background-repeat: no-repeat;
 								background-color: $strong-cyan;
 								border-radius: 100px;
-								position: relative;
 								margin-top: -20px;
 								box-shadow: 0 17px 25px -2px $strong-cyan;
 								cursor: pointer;
 					 		 }
+							  .percent:active{
+								background-color:rgb(59, 134, 122);
+	
+							}
 							
 
 					  }
@@ -199,8 +207,6 @@ body{
 					align-items: center;
 					padding-bottom: 40px ;
 			
-				
-				
 					.monthly{
 						color: $Grayish-Blue;
 						font-weight: $font-1;
@@ -220,6 +226,7 @@ body{
 							cursor: pointer;
 					
 						}
+					
 						.switch::after{
 							content: "";
 							position: absolute;
@@ -257,27 +264,42 @@ body{
 						font-weight: $font-1;
 						padding-right: 15px;
 						position: relative;
-		
-	
 					}
 					.percent{
 						width: 70px;
 						height: 30px;
 						background-color:$gravish-red ;
 						border-radius: 40px;
+						position: relative;
+						text-align: center;
 						
-						.percent-number{
 						
-							left: 15px;
+						.percent-number{		
 							top: 7px;
 							color: $light-red;
 							position: relative;
 							font-weight: $font-2;
-						
-						
-
 						}
+	
 					}
+					.percent-1{
+						display: none;
+						width: 130px;
+						height: 30px;
+						background-color:$gravish-red ;
+						border-radius: 40px;
+						position: relative;
+
+						.percent-number-1{
+							color: $light-red;
+							font-weight: $font-2;
+							top: 7px;
+							left: 8px;
+							position: relative;
+						}
+
+					}
+					
 
 				}
 				
@@ -296,29 +318,41 @@ body{
 				padding-top: 40px ;
 
 				.tex-img{
-					line-height: 25px;
 					font-weight: $font-1;
 					color: $Grayish-Blue;
 					padding-bottom: 40px;
-				
+			
 					line-height:35px;
 					img{
 						margin-right: 10px;
 					}
 
 				}
-				button{
-		
+			
+				.button{
+				    position: relative;
+					margin: 0 auto;
 					background-color: $Dark-Desaturated-Blue;
-					color: $Grayish-Blue;
 					font-weight: $font-2;
+					color: $Grayish-Blue;
 					font-size: 20px;
 					border-radius: 45px;
 					cursor: pointer;
 					width: 238px;
-					height: 63px;
-
+					height: 53px;
+					
 				}
+				.button:active{
+					color: $white;
+				}
+				
+					
+				
+			
+
+
+				
+				
 			
 			
 			

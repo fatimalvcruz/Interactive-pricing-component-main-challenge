@@ -45,6 +45,108 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@media all and (min-width: 1024px) {
+  body .container {
+    min-width: 812px; }
+    body .container .header {
+      padding-bottom: 50px;
+      padding-top: 110px;
+      background-position-y: 68px;
+      position: relative; }
+      body .container .header .traffic {
+        font-size: 28px; }
+      body .container .header .text {
+        display: flex;
+        justify-content: center; }
+        body .container .header .text .p-1 {
+          font-size: 15px; }
+        body .container .header .text .p-2 {
+          padding-left: 5px;
+          font-size: 15px; }
+    body .container .card {
+      width: 37%;
+      position: relative; }
+      body .container .card .car-header {
+        display: flex;
+        flex-wrap: wrap; }
+        body .container .card .car-header .pageview {
+          order: 1;
+          width: 50%;
+          font-size: 15px;
+          padding-top: 70px; }
+        body .container .card .car-header .progress {
+          order: 3;
+          width: 82%; }
+          body .container .card .car-header .progress .bar {
+            width: 50%; }
+            body .container .card .car-header .progress .bar .percent {
+              width: 40px;
+              height: 40px;
+              margin-top: -15px; }
+        body .container .card .car-header .dolar {
+          order: 2;
+          width: 45%;
+          justify-content: center;
+          text-align: center;
+          font-size: 30px;
+          padding-top: 60px; }
+        body .container .card .car-header .dolar-month {
+          font-size: 20px; }
+        body .container .card .car-header .toogle-area {
+          order: 4;
+          position: relative;
+          left: 17px;
+          width: 90%; }
+          body .container .card .car-header .toogle-area .monthly {
+            color: #858fad;
+            font-weight: 600;
+            padding-right: 10px; }
+          body .container .card .car-header .toogle-area .wrap-toggle .switch {
+            width: 40px;
+            height: 20px; }
+          body .container .card .car-header .toogle-area .wrap-toggle .switch::after {
+            width: 10px;
+            height: 10px; }
+          body .container .card .car-header .toogle-area .wrap-toggle input[type='checkbox']:checked + .switch::after {
+            transform: translateX(20px); }
+          body .container .card .car-header .toogle-area .year {
+            color: #858fad;
+            font-weight: 600;
+            padding-right: 15px;
+            position: relative; }
+          body .container .card .car-header .toogle-area .percent {
+            display: none; }
+          body .container .card .car-header .toogle-area .percent-1 {
+            display: block;
+            width: 100px;
+            height: 20px;
+            background-color: #feece7;
+            border-radius: 40px;
+            position: relative; }
+            body .container .card .car-header .toogle-area .percent-1 .percent-number-1 {
+              color: #ff8c66;
+              font-weight: 800;
+              font-size: 12px;
+              top: 1px;
+              left: 10px;
+              position: relative; }
+      body .container .card .card-footer {
+        display: flex;
+        width: 83%;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 10px; }
+        body .container .card .card-footer .tex-img {
+          text-align: left;
+          font-size: 12px;
+          line-height: 25px; }
+        body .container .card .card-footer .button {
+          font-size: 15px;
+          width: 187px;
+          height: 40px;
+          top: 12px;
+          margin-right: 10px; } }
+
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 15px;
@@ -61,7 +163,6 @@ body {
     margin: 0 auto;
     padding-top: 190px;
     text-align: center;
-    margin: 0 auto;
     position: relative;
     background-image: url("/img/pattern-circles.svg");
     background-repeat: no-repeat;
@@ -72,11 +173,11 @@ body {
       color: #293356;
       padding-bottom: 15px;
       font-size: 18px; }
-    .container .header .p-1 {
+    .container .header .text .p-1 {
       font-weight: 600;
       color: #858fad;
       line-height: 25px; }
-    .container .header .p-2 {
+    .container .header .text .p-2 {
       text-align: center;
       font-weight: 600;
       color: #858fad;
@@ -112,7 +213,8 @@ body {
           height: 15px;
           transition: width 150ms;
           display: flex;
-          border-radius: 10px; }
+          border-radius: 10px;
+          position: relative; }
           .container .card .car-header .progress .bar .percent {
             width: 50px;
             height: 50px;
@@ -121,10 +223,11 @@ body {
             background-repeat: no-repeat;
             background-color: #10d5c2;
             border-radius: 100px;
-            position: relative;
             margin-top: -20px;
             box-shadow: 0 17px 25px -2px #10d5c2;
             cursor: pointer; }
+          .container .card .car-header .progress .bar .percent:active {
+            background-color: #3b867a; }
       .container .card .car-header .dolar {
         color: #293356;
         font-size: 35px;
@@ -180,13 +283,27 @@ body {
           width: 70px;
           height: 30px;
           background-color: #feece7;
-          border-radius: 40px; }
+          border-radius: 40px;
+          position: relative;
+          text-align: center; }
           .container .card .car-header .toogle-area .percent .percent-number {
-            left: 15px;
             top: 7px;
             color: #ff8c66;
             position: relative;
             font-weight: 800; }
+        .container .card .car-header .toogle-area .percent-1 {
+          display: none;
+          width: 130px;
+          height: 30px;
+          background-color: #feece7;
+          border-radius: 40px;
+          position: relative; }
+          .container .card .car-header .toogle-area .percent-1 .percent-number-1 {
+            color: #ff8c66;
+            font-weight: 800;
+            top: 7px;
+            left: 8px;
+            position: relative; }
     .container .card hr {
       border: 0.5px solid #eaeefb; }
     .container .card .card-footer {
@@ -195,19 +312,22 @@ body {
       padding-bottom: 65px;
       padding-top: 40px; }
       .container .card .card-footer .tex-img {
-        line-height: 25px;
         font-weight: 600;
         color: #858fad;
         padding-bottom: 40px;
         line-height: 35px; }
         .container .card .card-footer .tex-img img {
           margin-right: 10px; }
-      .container .card .card-footer button {
+      .container .card .card-footer .button {
+        position: relative;
+        margin: 0 auto;
         background-color: #293356;
-        color: #858fad;
         font-weight: 800;
+        color: #858fad;
         font-size: 20px;
         border-radius: 45px;
         cursor: pointer;
         width: 238px;
-        height: 63px; }
+        height: 53px; }
+      .container .card .card-footer .button:active {
+        color: white; }
