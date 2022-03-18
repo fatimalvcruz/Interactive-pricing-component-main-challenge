@@ -56,7 +56,7 @@ $font-1:600;
 $font-2:800;
 
 $soft-cyan: hsl(174, 77%, 80%);
-$strong-cyan: hsl(174, 86%, 45%);
+$strong-cyan: hsl(174, 81%, 23%);
 $gravish-red: hsl(14, 92%, 95%);
 $light-red: hsl(15, 100%, 70%);
 $pale-blue:hsl(226, 100%, 87%);
@@ -118,15 +118,12 @@ body{
 				line-height: 25px;
 				padding-bottom: 45px;
 			}
-	
-
-		}
-		
+		}	
 	}
 
 	.card{
 		background-color: $white;
-		width: 87%;
+		width: 88%;
 		margin: 0 auto;
 		border-radius: 15px;
 		position: relative;
@@ -135,70 +132,101 @@ body{
 	
 			.car-header{
 				position: relative;
-				.pageview{
-					text-align:center;
+
+				.k-views{
+					margin: 0 auto;
+					display:flex;
 					padding-bottom: 80px;
 					padding-top: 50px;
 					justify-content: center;
 					font-weight: $font-2;
 					font-size: 20PX;
 					color: $Grayish-Blue;
-					
-			
-				}
-				.progress{
-			
-					margin: 0 auto;
-					position:relative;
-					width:85%;
-					background-color: $Light-Grayish-Blue-2;
-					margin-bottom: 80px;
-					border-radius: 10px;
-			
-				
-					  .bar{
-						background-color: $soft-cyan;
-						width:30%;
-						height:15px;
-						transition:width 150ms;
-						display: flex;
-						border-radius: 10px; 
-						position: relative;
-		
+					letter-spacing: 4px;
 
-							.percent{
-								width: 50px;
-								height: 50px;
-								background: url('/img/icon-slider.svg');
-								background-position:center ;
-								background-repeat: no-repeat;
-								background-color: $strong-cyan;
-								border-radius: 100px;
-								margin-top: -20px;
-								box-shadow: 0 17px 25px -2px $strong-cyan;
-								cursor: pointer;
-					 		 }
-							  .percent:active{
-								background-color:rgb(59, 134, 122);
-	
-							}
-					  }
+					.kbite{
+						padding-right: 8px;
+					}
+					
 				}
+
+				
+
+				.bar-progress{
 		
+					margin: 0 auto;
+					position: relative;
+					padding-bottom: 50px;
+					width: 76%;
+					height: 20px ;
+			
+					input[type='range']{
+						width: 100%;
+						height:11px;
+						-webkit-appearance: none;
+						background: linear-gradient(to right, $soft-cyan 0%,calc(var(--value)*1%), $Light-Grayish-Blue-1 0);
+						border-radius: 10px;					
+						}
+					input[type='range']::-webkit-slider-thumb {
+						width: 50px;
+						height: 50px;
+						background: url('/img/icon-slider.svg');
+						background-position:center ;
+						background-repeat: no-repeat;
+						background-color: $soft-cyan;
+						border-radius: 100px;
+						box-shadow: 0 17px 25px -2px $soft-cyan;
+						position: relative;
+						cursor: pointer;
+						-webkit-appearance: none;
+						margin-top: -17px;
+						
+								}
+					input[type='range']::-webkit-slider-thumb:active{
+							background-color:$strong-cyan;
+								}
+								
+		
+					input[type='range']::-webkit-slider-runnable-track {
+						width: 100%;
+						height: 11px;
+						-webkit-appearance: none;
+						cursor: pointer;
+						background: transparent;
+						border-radius: 10px;
+						border: 10px ;
+						  }
+				
+				}
+				.price-month{
+					display: flex;
+					margin: 0 auto;
+					justify-content: center;
+					padding-bottom: 60px;
+
 					.dolar{
 						color: $Dark-Desaturated-Blue;
 						font-size: 35px;
 						font-weight: $font-2;
-						text-align:center;
-						padding-bottom: 60px;
+
+					}
+					.money{
+						color: $Dark-Desaturated-Blue;
+						font-size: 35px;
+						font-weight: $font-2;
+				
 
 					}
 					.dolar-month{
+						padding-left: 8px;
 						color: $Grayish-Blue;
 						font-weight: $font-1;
-						font-size: 25px;
+						font-size: 28px;
 
 				}
+
+				}
+					
 				.toogle-area{
 					display: flex;
 					justify-content: center;
@@ -219,7 +247,7 @@ body{
 							display: inline-block;
 							width: 70px;
 							height: 30px;
-							background-color:$Light-Grayish-Blue-2 ;
+							background-color:$soft-cyan ;
 							border-radius: 40px;
 							cursor: pointer;
 					
@@ -245,7 +273,7 @@ body{
 						}
 						
 						input[type="checkbox"]:checked + .switch{
-							background-color: $soft-cyan;
+							background-color: $Light-Grayish-Blue-2;
 						}
 						
 						.offscreen {

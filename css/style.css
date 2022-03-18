@@ -64,34 +64,40 @@ table {
           padding-left: 5px;
           font-size: 15px; }
     body .container .card {
-      width: 37%;
-      position: relative; }
+      width: 38%;
+      position: relative;
+      margin: 0 auto; }
       body .container .card .car-header {
         display: flex;
         flex-wrap: wrap; }
-        body .container .card .car-header .pageview {
+        body .container .card .car-header .k-views {
           order: 1;
           width: 50%;
           font-size: 15px;
           padding-top: 70px; }
-        body .container .card .car-header .progress {
+        body .container .card .car-header .bar-progress {
           order: 3;
-          width: 82%; }
-          body .container .card .car-header .progress .bar {
-            width: 50%; }
-            body .container .card .car-header .progress .bar .percent {
-              width: 40px;
-              height: 40px;
-              margin-top: -15px; }
-        body .container .card .car-header .dolar {
+          margin: 0 auto;
+          position: relative;
+          padding-bottom: 80px;
+          width: 95%; }
+          body .container .card .car-header .bar-progress input[type='range'] {
+            display: block;
+            margin: 0 auto;
+            width: 82%;
+            position: relative; }
+        body .container .card .car-header .price-month {
           order: 2;
           width: 45%;
           justify-content: center;
           text-align: center;
-          font-size: 30px;
           padding-top: 60px; }
-        body .container .card .car-header .dolar-month {
-          font-size: 20px; }
+          body .container .card .car-header .price-month .dolar {
+            font-size: 30px; }
+          body .container .card .car-header .price-month .money {
+            font-size: 30px; }
+          body .container .card .car-header .price-month .dolar-month {
+            font-size: 22px; }
         body .container .card .car-header .toogle-area {
           order: 4;
           position: relative;
@@ -119,17 +125,13 @@ table {
           body .container .card .car-header .toogle-area .percent-1 {
             position: relative;
             display: block;
-            width: 125px;
             height: 20px;
             background-color: #feece7;
             border-radius: 40px; }
             body .container .card .car-header .toogle-area .percent-1 .percent-number-1 {
               position: relative;
               color: #ff8c66;
-              font-weight: 800;
-              font-size: 12px;
-              top: 2px;
-              padding-left: 10px; }
+              top: 2px; }
       body .container .card .card-footer {
         display: flex;
         width: 83%;
@@ -185,59 +187,78 @@ body {
       padding-bottom: 45px; }
   .container .card {
     background-color: white;
-    width: 87%;
+    width: 88%;
     margin: 0 auto;
     border-radius: 15px;
     position: relative;
     box-shadow: 0 0 100px #eaeefb; }
     .container .card .car-header {
       position: relative; }
-      .container .card .car-header .pageview {
-        text-align: center;
+      .container .card .car-header .k-views {
+        margin: 0 auto;
+        display: flex;
         padding-bottom: 80px;
         padding-top: 50px;
         justify-content: center;
         font-weight: 800;
         font-size: 20PX;
-        color: #858fad; }
-      .container .card .car-header .progress {
+        color: #858fad;
+        letter-spacing: 4px; }
+        .container .card .car-header .k-views .kbite {
+          padding-right: 8px; }
+      .container .card .car-header .bar-progress {
         margin: 0 auto;
         position: relative;
-        width: 85%;
-        background-color: #cdd7ee;
-        margin-bottom: 80px;
-        border-radius: 10px; }
-        .container .card .car-header .progress .bar {
+        padding-bottom: 50px;
+        width: 76%;
+        height: 20px; }
+        .container .card .car-header .bar-progress input[type='range'] {
+          width: 100%;
+          height: 11px;
+          -webkit-appearance: none;
+          background: linear-gradient(to right, #a5f3eb 0%, calc(var(--value)*1%), #eaeefb 0);
+          border-radius: 10px; }
+        .container .card .car-header .bar-progress input[type='range']::-webkit-slider-thumb {
+          width: 50px;
+          height: 50px;
+          background: url("/img/icon-slider.svg");
+          background-position: center;
+          background-repeat: no-repeat;
           background-color: #a5f3eb;
-          width: 30%;
-          height: 15px;
-          transition: width 150ms;
-          display: flex;
+          border-radius: 100px;
+          box-shadow: 0 17px 25px -2px #a5f3eb;
+          position: relative;
+          cursor: pointer;
+          -webkit-appearance: none;
+          margin-top: -17px; }
+        .container .card .car-header .bar-progress input[type='range']::-webkit-slider-thumb:active {
+          background-color: #0b6a61; }
+        .container .card .car-header .bar-progress input[type='range']::-webkit-slider-runnable-track {
+          width: 100%;
+          height: 11px;
+          -webkit-appearance: none;
+          cursor: pointer;
+          background: transparent;
           border-radius: 10px;
-          position: relative; }
-          .container .card .car-header .progress .bar .percent {
-            width: 50px;
-            height: 50px;
-            background: url("/img/icon-slider.svg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #10d5c2;
-            border-radius: 100px;
-            margin-top: -20px;
-            box-shadow: 0 17px 25px -2px #10d5c2;
-            cursor: pointer; }
-          .container .card .car-header .progress .bar .percent:active {
-            background-color: #3b867a; }
-      .container .card .car-header .dolar {
-        color: #293356;
-        font-size: 35px;
-        font-weight: 800;
-        text-align: center;
+          border: 10px; }
+      .container .card .car-header .price-month {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
         padding-bottom: 60px; }
-      .container .card .car-header .dolar-month {
-        color: #858fad;
-        font-weight: 600;
-        font-size: 25px; }
+        .container .card .car-header .price-month .dolar {
+          color: #293356;
+          font-size: 35px;
+          font-weight: 800; }
+        .container .card .car-header .price-month .money {
+          color: #293356;
+          font-size: 35px;
+          font-weight: 800; }
+        .container .card .car-header .price-month .dolar-month {
+          padding-left: 8px;
+          color: #858fad;
+          font-weight: 600;
+          font-size: 28px; }
       .container .card .car-header .toogle-area {
         display: flex;
         justify-content: center;
@@ -254,7 +275,7 @@ body {
             display: inline-block;
             width: 70px;
             height: 30px;
-            background-color: #cdd7ee;
+            background-color: #a5f3eb;
             border-radius: 40px;
             cursor: pointer; }
           .container .card .car-header .toogle-area .wrap-toggle .switch::after {
@@ -270,7 +291,7 @@ body {
           .container .card .car-header .toogle-area .wrap-toggle input[type='checkbox']:checked + .switch::after {
             transform: translateX(40px); }
           .container .card .car-header .toogle-area .wrap-toggle input[type="checkbox"]:checked + .switch {
-            background-color: #a5f3eb; }
+            background-color: #cdd7ee; }
           .container .card .car-header .toogle-area .wrap-toggle .offscreen {
             position: absolute;
             left: -9999px; }

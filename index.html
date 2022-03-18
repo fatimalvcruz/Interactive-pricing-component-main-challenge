@@ -26,20 +26,26 @@
 
         <div class="card">
             <div class="car-header">
-                <h3 class="pageview"> <spam id="measure">100K</spam> PAGEVIEWS</h3>
-
-                <div class="progress">
-                    <div class= "bar"id="bar">  <span class="percent"id="percent"></span></div>
+                <div class="k-views">
+                    <div  id="measure">0</div><div class="kbite">K</div> <div class="pageview"> PAGEVIEWS</div>
                 </div>
                 
-                <p class="dolar">$ 16.00 <span class="dolar-month">/month</span></p>
+                <div class="bar-progress">
+                    <input type="range" min="0" max="100"  value="2" step="20"  id="myRange" >
+                </div>
+                        
+                <div class="price-month">
+                    <p class="dolar">$</p> <p class="money">0.00<p class="dolar-month">/month</p>
+                </div>
+           
     
                 <div class="toogle-area">
                     <p class="monthly">Monthly Billing</p>
             
                     <div class="wrap-toggle">
-                        <input type="checkbox" id="toogle" class="offscreen" />
+                        <input type="checkbox" id="toogle" class="offscreen"  />
                         <label for="toogle" class="switch"></label>
+                     
                     </div>
 
                 
@@ -54,6 +60,7 @@
                     </div>  
                 </div>        
             </div>
+            
             <hr></hr>
                 
             <div class="card-footer">
@@ -71,6 +78,7 @@
         </div>    
 
     </div>
+    <script src="main.js"></script>
    
    
     

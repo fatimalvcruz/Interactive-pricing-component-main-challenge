@@ -30,7 +30,7 @@ $Dark-Desaturated-Blue:hsl(227, 35%, 25%);
             
                 .text{
                     display: flex;
-                justify-content: center;
+                    justify-content: center;
                         .p-1{
                     
                             font-size: 15px;
@@ -46,43 +46,59 @@ $Dark-Desaturated-Blue:hsl(227, 35%, 25%);
         
 
             .card{
-            width: 37%;
-            position: relative;
+                width: 38%;
+                position: relative;
+                margin: 0 auto;
+
                 .car-header{
                     display: flex;
                     flex-wrap: wrap;
-        
-                    .pageview{
+            
+                    .k-views{
                         order:1 ;
                         width: 50%;
                         font-size: 15px;
                         padding-top: 70px;
-                    }
-                    .progress{
-                        order:3 ;
-                        width: 82%;
-                        .bar{
-                            width: 50%;
-                            .percent{
-                                width: 40px;
-                                height: 40px;
-                                margin-top: -15px;
-                    
-                            }
                         }
-            
-                    }
-                    .dolar{
+
+
+                    .bar-progress{
+                        order: 3;
+                        margin: 0 auto;
+                        position: relative;
+                        padding-bottom: 80px;
+                        width: 95%;
+                 
+                         
+                        input[type='range']{
+                            display: block;
+                            margin: 0 auto;
+                            width: 82%;
+                            position: relative;
+                        
+                            // margin-left: 35px;
+                        }
+                            
+                    } 
+                    .price-month{
                         order:2 ;
                         width: 45%;
                         justify-content: center;
                         text-align: center;
-                        font-size: 30px;
-                        padding-top: 60px
+                        // font-size: 30px;
+                        padding-top: 60px;
+                        .dolar{
+
+                            font-size: 30px;
+                        }
+                        .money{
+                            font-size: 30px;
+                        }
+                        .dolar-month{
+                            font-size: 22px;
+                        } 
                     }
-                    .dolar-month{
-                        font-size: 20px;
-                    }
+                  
                 
                 
                 .toogle-area{
@@ -124,7 +140,8 @@ $Dark-Desaturated-Blue:hsl(227, 35%, 25%);
                     .percent-1{
                         position: relative;
                         display: block;
-                        width: 125px;
+      
+                        // width: 125px;
                         height: 20px;
                         background-color:$gravish-red ;
                         border-radius: 40px;
@@ -133,11 +150,7 @@ $Dark-Desaturated-Blue:hsl(227, 35%, 25%);
                         .percent-number-1{
                             position: relative;
                             color: $light-red;
-                            font-weight: $font-2;
-                            font-size: 12px;
                             top: 2px;
-                            padding-left:10px ;
-                          
                         }
                     }
 
