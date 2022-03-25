@@ -164,8 +164,10 @@ body{
 						width: 100%;
 						height:11px;
 						-webkit-appearance: none;
-						background: linear-gradient(to right, $soft-cyan 0%,calc(var(--value)*1%), $Light-Grayish-Blue-1 0);
-						border-radius: 10px;					
+						// background: $soft-cyan;
+						background: linear-gradient(to right, $soft-cyan 0%,calc(var(--value)*50%), $Light-Grayish-Blue-1 0);
+						border-radius: 10px;
+						opacity: 2;					
 						}
 					input[type='range']::-webkit-slider-thumb {
 						width: 50px;
@@ -173,7 +175,7 @@ body{
 						background: url('/img/icon-slider.svg');
 						background-position:center ;
 						background-repeat: no-repeat;
-						background-color: $soft-cyan;
+						background-color: $strong-cyan;
 						border-radius: 100px;
 						box-shadow: 0 17px 25px -2px $soft-cyan;
 						position: relative;
@@ -247,7 +249,7 @@ body{
 							display: inline-block;
 							width: 70px;
 							height: 30px;
-							background-color:$soft-cyan ;
+							background-color:$Light-Grayish-Blue-1 ;
 							border-radius: 40px;
 							cursor: pointer;
 					
@@ -273,7 +275,7 @@ body{
 						}
 						
 						input[type="checkbox"]:checked + .switch{
-							background-color: $Light-Grayish-Blue-2;
+							background-color: $soft-cyan;
 						}
 						
 						.offscreen {
