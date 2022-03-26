@@ -231,14 +231,16 @@ body{
 					
 				.toogle-area{
 					display: flex;
+					width: 93%;
 					justify-content: center;
+					margin: 0 auto;
 					align-items: center;
 					padding-bottom: 40px ;
 			
 					.monthly{
 						color: $Grayish-Blue;
 						font-weight: $font-1;
-						padding-right: 15px;
+						padding-right: 10px;
 			
 					}
 					.wrap-toggle{

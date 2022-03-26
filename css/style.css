@@ -262,13 +262,15 @@ body {
           font-size: 28px; }
       .container .card .car-header .toogle-area {
         display: flex;
+        width: 93%;
         justify-content: center;
+        margin: 0 auto;
         align-items: center;
         padding-bottom: 40px; }
         .container .card .car-header .toogle-area .monthly {
           color: #858fad;
           font-weight: 600;
-          padding-right: 15px; }
+          padding-right: 10px; }
         .container .card .car-header .toogle-area .wrap-toggle {
           padding-right: 30px; }
           .container .card .car-header .toogle-area .wrap-toggle .switch {
